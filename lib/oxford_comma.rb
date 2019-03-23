@@ -4,8 +4,8 @@ def oxford_comma(array)
     puts array.join(' and ')
   else
     array.pop
-    array.join(', ')
+    #array.join(', ')
     array << ", and #{last_ele}"
-    array.join
+    array.join(', ')
   end
 end
