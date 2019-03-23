@@ -1,8 +1,10 @@
 def oxford_comma(array)
+  last_ele = array[array.length-1]
   if array.length < 3
     array.join(' and ')
   else
-    array[0:(array.length-1)].join(', ')
-    
+    array.pop
+    array.join(', ')
+    array << ", and #{last_ele}"
   end
 end
