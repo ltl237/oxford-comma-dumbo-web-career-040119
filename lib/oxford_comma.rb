@@ -1,3 +1,5 @@
 def oxford_comma(array)
-  puts array.split
+  new_arr = array.split
+  new_arr.each do |item|
+    puts "#{item}"
 end
